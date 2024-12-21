@@ -1,0 +1,45 @@
+body{
+    font-family:Almarai ;
+}
+
+.card .read-more:hover{
+    font-size: 14px;
+}
+
+.card:hover{
+    box-shadow: 8px 8px 8px 8px green;
+    transform: scale(1,2);
+}
+
+.card1:hover{
+    box-shadow: 8px 8px 8px 8px green;
+    transform: scale(1,2);
+}
+.card{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    transition: .3s;
+    margin: 3rem;
+}
+.card1{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    transition: .3s;
+    margin: 3rem;
+}
+
+#image{
+  position: absolute;
+  top:calc(80% - 300px);
+  right: 60%;
+  z-index:999
+
+}
+
+
+#image img{
+    height: 600px;
+}
+

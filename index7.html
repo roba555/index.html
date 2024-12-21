@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملاعب السعودية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: rgb(85, 32, 134);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem; /* تكبير حجم الخط */
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .stadiums-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* لجعل العناصر في المنتصف */
+            margin-top: 30px;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .stadium-card {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, opacity 0.5s ease;
+        }
+
+        .stadium-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.5s ease;
+        }
+
+        .stadium-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            font-size: 1rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .stadium-card:hover .stadium-info {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .stadium-card:hover {
+            transform: scale(1.05);
+        }
+
+        .stadium-card:hover img {
+            opacity: 0.3;
+        }
+
+        /* تنسيق زر العودة إلى الصفحة الرئيسية */
+        .home-button-container {
+            display: block;
+            width: fit-content;
+            margin: 30px auto; /* جعل المستطيل في منتصف الصفحة */
+            padding: 10px;
+            background-color: rgb(85, 32, 134); /* اللون الأزرق */
+            border-radius: 10px; /* إضافة الزوايا المنحنية للمستطيل */
+        }
+
+        .home-button {
+            padding: 12px 20px;
+            background-color: rgb(85, 32, 134); /* اللون الأخضر */
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none; /* إزالة الخط تحت الرابط */
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #11045f; /* اللون الأخضر الداكن */
+            transform: scale(1.05); /* تأثير التكبير */
+        }
+
+        footer {
+            margin-top: auto;
+       }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>الملاعب السعودية</h2>
+        <p>تعرف على أشهر الملاعب في المملكة العربية السعودية</p>
+    </header>
+
+    <h1>الملاعب السعودية</h1>
+
+    <div class="stadiums-container">
+        <!-- ملعب الملك فهد -->
+        <div class="stadium-card">
+            <img src="https://saudipedia.com/saudipedia/uploads/images/2024/06/08/90825.jpg" alt="ملعب الملك فهد">
+            <div class="stadium-info">
+                <h3>ملعب الملك فهد</h3>
+                <p>يقع في الرياض، ويتسع لـ 68,000 مشجع.</p>
+            </div>
+        </div>
+
+        <!-- ملعب الجوهرة -->
+        <div class="stadium-card">
+            <img src="https://scth.scene7.com/is/image/scth/al-jawhara-stadium-1:crop-760x570?defaultImage=al-jawhara-stadium-1" alt="ملعب الجوهرة">
+            <div class="stadium-info">
+                <h3>ملعب الجوهرة</h3>
+                <p>يقع في جدة، ويتسع لـ 62,000 مشجع.</p>
+            </div>
+        </div>
+
+        <!-- ملعب الأمير عبدالله الفيصل -->
+        <div class="stadium-card">
+            <img src="https://saudipedia.com/saudipedia/uploads/images/2024/01/20/88247.jpg" alt="ملعب الأمير عبدالله الفيصل">
+            <div class="stadium-info">
+                <h3>ملعب الأمير عبدالله الفيصل</h3>
+                <p>يقع في جدة، ويتسع لـ 27,000 مشجع.</p>
+            </div>
+        </div>
+
+        <!-- ملعب الأمير فيصل بن فهد -->
+        <div class="stadium-card">
+            <img src="https://rahhal.wego.com/wp-content/uploads/2024/08/Prince-Faisal-bin-Fahad-Sports-City-Stadium-2-scaled-1.jpg" alt="ملعب الأمير فيصل بن فهد">
+            <div class="stadium-info">
+                <h3>ملعب الأمير فيصل بن فهد</h3>
+                <p>يقع في الرياض، ويتسع لـ 25,000 مشجع.</p>
+            </div>
+        </div>
+
+        <!-- ملعب المدينة الرياضية -->
+        <div class="stadium-card">
+            <img src="https://saudipedia.com/saudipedia/uploads/images/2023/12/14/84956.jpg" alt="ملعب المدينة الرياضية">
+            <div class="stadium-info">
+                <h3>ملعب المدينة الرياضية</h3>
+                <p>يقع في الطائف، ويتسع لـ 35,000 مشجع.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- زر العودة إلى الصفحة الرئيسية مع مستطيل أزرق -->
+    <div class="home-button-container">
+        <a href="index.html" class="home-button">الذهاب إلى الصفحة الرئيسية</a>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظه لدى اكادمية طويق
+    </footer>
+
+</body>
+</html>

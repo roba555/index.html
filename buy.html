@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- Google Fonts: Almarai -->
+    <link href="https://fonts.googleapis.com/css?family=Almarai&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: rgb(246, 227, 248);
+            color: rgb(85, 32, 134);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .card {
+            height: auto;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        header {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: rgb(85, 32, 134);
+            color: white;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons i:hover {
+            color: #ffcc00;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <header>
+        <nav class="navbar" style="background-color: rgb(85, 32, 134);">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="images/logo.png" alt="World Cup Logo" width="60" height="60">
+                    <strong class="p-1 text-white"> أهلا بالعالم</strong>
+                </div>
+                <ul class="list-inline mb-0 social-icons">
+                    <a href="index.html"><strong class="p-2 text-white">الصفحة الرئيسية</strong></a>
+                    <li class="list-inline-item p-1"><i class="bi bi-whatsapp fs-4 text-white"></i></li>
+                    <li class="list-inline-item p-1"><i class="bi bi-telephone fs-4 text-white"></i></li>
+                    <li class="list-inline-item p-1"><i class="bi bi-snapchat fs-4 text-white"></i></li>
+                    <li class="list-inline-item p-1"><i class="bi bi-twitter-x fs-4 text-white"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-3">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <h3><strong>التذكرة البرونزية</strong></h3>
+                            <p>السعر: 100 ريال </p>
+                            <p style="color: green;">التوفر: متاح</p>
+                            <button class="btn btn-success">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <h3><strong>التذكرة الفضية</strong></h3>
+                            <p>السعر: 200 ريال </p>
+                            <p style="color: green;">التوفر:  متاح</p>
+                            <button class="btn btn-success">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <h3><strong>التذكرة الذهبية</strong></h3>
+                            <p>السعر: 300 ريال </p>
+                            <p style="color: green;">التوفر:  متاح</p>
+                            <button class="btn btn-success">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-3">
+        <p class="mb-0">جميع الحقوق محفوظة لدى أكاديمية طويق © 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

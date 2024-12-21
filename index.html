@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almarai">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>world cup 2034</title>
+    <style>
+        :root {
+            --image-width: 100%;
+            --image-height: auto;
+        }
+
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-image: url('images/ksaworld.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header, main {
+            flex: 0 0 auto;
+        }
+
+        .navbar {
+            background-color: #501aa1e6;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .navbar img {
+            height: 45px;
+            margin-left: 15px;
+            border-radius: 5px;
+        }
+
+        .navbar .navbar-brand {
+            margin-right: auto;
+            color: #eeeeee;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons li a {
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons li a:hover {
+            color: #004a6f;
+        }
+
+        .buy-ticket {
+            background-color: #8605ff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .buy-ticket:hover {
+            background-color: #11045f;
+        }
+
+        .main-section {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .main-section .card {
+            width: 250px;
+            height: auto;
+            background-color: rgb(168, 84, 228);
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            color: white;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-section .card img {
+            width: 100%;
+            max-width: 230px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+
+        .main-section .card:hover {
+            transform: scale(1.05);
+        }
+
+        .main-section .card h2 {
+            margin-top: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        #image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        #image-container img {
+            width: 250px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        #image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: hsla(270, 72%, 37%, 0.902);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.2rem;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar img {
+                height: 35px;
+            }
+
+            .navbar .navbar-brand {
+                margin-bottom: 10px;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .buy-ticket {
+                margin-top: 10px;
+            }
+
+            .main-section .card {
+                width: 200px;
+            }
+
+            #image-container img {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar img {
+                height: 30px;
+            }
+
+            .main-section .card {
+                width: 150px;
+            }
+
+            #image-container img {
+                width: 150px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" style="background-color: rgb(85, 32, 134);">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="images/logo.png" alt="World Cup Logo" width="60" height="60">
+                    <strong class="p-1 text-white">أهلا بالعالم</strong>
+                </div>
+                <ul class="list-inline mb-0 social-icons">
+                    <a href="buy.html"><strong class="p-2 text-white">شراء تذكرة</strong></a>
+                    <a href="index.html"><strong class="p-2 text-white">الصفحة الرئيسية</strong></a>
+                    <li class="list-inline-item p-1"><i class="bi bi-whatsapp fs-4 text-white"></i></li>
+                    <li class="list-inline-item p-1"><i class="bi bi-telephone fs-4 text-white"></i></li>
+                    <li class="list-inline-item p-1"><i class="bi bi-snapchat fs-4 text-white"></i></li>
+                    <li class="list-inline-item p-1"><i class="bi bi-twitter-x fs-4 text-white"></i></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="main-section">
+            <a href="index10.html" class="card">
+                <img src="images/car.jpg" alt="النقل">
+                <h2>النقل</h2>
+            </a>
+           
+            <a href="index9.html" class="card">
+                <img src="images/hotal.png" alt="الفنادق">
+                <h2>الفنادق</h2>
+            </a>
+            <a href="index7.html" class="card">
+                <img src="images/mal.png" alt="الملاعب">
+                <h2>الملاعب</h2>
+            </a>
+            <a href="index5.html" class="card">
+                <img src="images/maw.png" alt="مواعيد">
+                <h2>جدول المباريات</h2>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        جميع الحقوق محفوظه لدى اكادمية طويق
+    </footer>
+</body>
+</html>
